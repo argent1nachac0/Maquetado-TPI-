@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+  <title>MENU</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  }
+  body,html{
+    height: 100%;
+    background-repeat: no-repeat; 
+    background-color:#F6F8F3; 
+  }
+    .wrapper {
+    min-height: 100%;
+    position: relative;
+  }
+  .footer {
+    height:50px;
+    position: fixed;
+  }
+  .example .pagination>li>a,
+  .example .pagination>li>span {
+    border: 1px solid  #28A744;
+  }
+  .pagination>li>a {
+    color: #28A744;
+  }
+  .pagination>li.active>a {
+    background: #28A744;
+    color: #fff;
+  }
+  .opciones{
+    width: 250px;
+    height: 100px;
+    background: #28A744;
+    color: #fff;
+    font-size: 1.2em;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+
+  .opciones:hover{
+    animation-name: AnimHover;
+    cursor: pointer;
+    color: #fff
+  }
+ @ keyframes AnimHover{
+              0%{
+                  transform: scale3d(1,1,1);
+              }
+              25%{
+                  box-shadow: 0px 0px 5px #000;
+              }
+              50%{
+                  transform: scale3d(1.1,1.1,1.1);
+                  background-color: #2D5D66;
+                  box-shadow: 0px 0px 5px #000;
+              }
+              75%{
+                  box-shadow: 0px 0px 5px #000;
+              }         
+        }
+</style>
+
+</head>
+<body>
+<!--SECCION SISTEMA DE GESTION RECIPLAS-->
+<section>
+  <div class="py-3 mb-2 bg-light text-dark">
+  <header>
+    <div class="container-fluid">      
+      <div class="border-secondary text-success p-3 bg-secondary text-black shadow bg-white rounded">
+        <div class="row">
+          <div class="col-10 pt-2">
+            <h1>
+              <img src="https://i.ibb.co/1qvWxM9/LOGORECIPLAS.png" alt="LOGORECIPLAS" border="0" class="text bg-gradient-secondary mediana">Sistema de Gestion Reciplas        
+            </h1>
+          </div>
+          <div class="col-2 text-right pt-2">  
+            <a href="PAGINA PRINCIPAL.html" class="btn btn-success btn-lg">
+              Salir <i class="fa fa-sign-out"></i>
+            </a>        
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  </div>
+</section>
+
+ <!--SECCION BREADCRUMB-->
+<section>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active"><a class="text-success" href="PAGINA PRINCIPAL.html">Pagina principal</a> </li>
+      <li class="breadcrumb-item inhactive" aria-current="page"> <a class="text-secondary">Menú de Ventas</a></li>
+    </ol>
+  </nav>
+</section>
+
+<!--SECCION NOMBRE DE USUARIO-->
+<section class="usuario">
+  <h3 class="px-3">
+      <p class="text-secondary">
+        <img src="http://www.rrhhdigital.com/userfiles/empleados-felices-womenalia.jpg" width="80" height="80" class="img-thumbnail">
+      Bienvenido Juan Perez</p>
+  </h3><hr>
+</section>
+
+<!--SECCION MENU-->
+<section class=" p-5 wrapper"> 
+  <div class="container py">
+    <div class="row">
+      <div class="col-3 text-center " >
+        <button class="btn btn-lg opciones text-wrap py-3" data-toggle="modal" data-target="#newcli-modal">
+          Registrar Nuevo Cliente
+        </button>
+      </div>
+      
+      <div class="col-3 text-center">
+        <button class="btn btn-lg opciones text-wrap py-3" data-toggle="modal" data-target="#newprov-modal">
+          Registrar Nuevo Proveedor
+        </button>
+      </div>
+      <div class="col-3 " >
+        <button class="btn btn-lg opciones text-wrap" data-toggle="modal" data-target="#regped-modal">
+          Registrar Nuevo Pedido
+        </button>              
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-lg opciones py-3 " data-toggle="popover" title="BOTON SIN DESARROLLAR" data-content="Mostraria un formulario a completar en donde, una vez terminado, se podria guardar y/o facturar dicha venta.">
+          Registrar Venta/Facturar
+        </button>
+      </div>
+    </div>
+    <div class="row pt-5">
+      <div class="col-3">
+        <button class="btn btn-lg opciones text-wrap " data-toggle="modal" data-target="#modcli-modal">
+          Modificar Cliente registrado
+        </button>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-lg opciones text-wrap py-3" data-toggle="modal" data-dismiss="modal" data-target="#modprov-modal">
+          Modificar Proveedor registrado
+        </button>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-lg opciones  text-wrap py-3" data-toggle="modal" data-target="#modped-modal">
+          Modificar Pedidos
+        </button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-lg opciones text-wrap" data-toggle="modal" data-target="#Vtas-modal">
+          Consultar Ventas Realizadas
+        </button>
+      </div>
+    </div> 
+    </div>
+  </div>
+</section>    
+
+<!--SECCION FOOTER-->
+<section>
+  <footer class="footer fixed-bottom font-small text-center bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="m-0 py-3">Copyright @ 2020. Todos los derechos reservados. Desing Patterns</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
+
+<!--NUEVO CLIENTE-->
+<section>
+  <div class="modal fade" id="newcli-modal" tabindex="-1" role="dialog" aria-labelledby="ML2" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="font-size: 30px" id="ML1">Nuevo Cliente <i class="fas fa-user-plus"></i></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="input-group mb-3 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1" ><b>Nombre Cliente</b> </span>
+            </div>
+            <input class="form-control text-center col-md-4" type="text" placeholder="Sanchez, Luis">
+          </div>
+          <div class="row">
+            <div class="form-group input-group mb-3 col-6">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3"><b>DNI</b></span>
+              </div>
+              <input type="text" class="form-control text-center col-md-6" placeholder="12345678" aria-describedby="basic-addon3">
+            </div>
+            <div class="form-group input-group mb-3 col-6">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3"> <b>CUIT/CUIL</b></span>
+              </div>
+              <input type="text" class="form-control text-center" placeholder="20123456789" aria-describedby="basic-addon3">
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon2"><b>Domicilio </b></span>
+            </div>
+            <input type="text" class="form-control text-center col-md-7" placeholder="Bo. Dr Montaña 999viv. Mz.60 Cs.7"  aria-describedby="basic-addon2">
+          </div> 
+        <div class="row">        
+          <div class=" form-group input-group mb-3 col-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Celular</b></span>
+            </div>
+            <input type="text" class="form-control text-center" placeholder="03794-885200"aria-describedby="basic-addon3">
+          </div>
+          <div class=" form-group input-group mb-3 col-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Telefono fijo</b></span>
+            </div>
+            <input type="text" class="form-control text-center" placeholder="4-823859" aria-describedby="basic-addon3">
+          </div>
+        </div>  
+          <div class="input-group mb-3 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>E-mail</b></span>
+            </div>
+            <input type="text" class="form-control text-center col-md-6" placeholder="sanchezluis@gmail.com" aria-describedby="basic-addon3">
+          </div>
+         <div class="row">           
+          <div class=" form-group input-group mb-3 col-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>País</b></span>
+            </div>
+            <input type="text" class="form-control text-center col-md-6" placeholder="Argentina" aria-label="Cantidad" aria-describedby="basic-addon3">
+          </div>
+          <div class="form-group input-group mb-3 col-6 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Provincia</b></span>
+            </div>
+            <input type="text" class="form-control text-center" placeholder="Corrientes" aria-describedby="basic-addon3">
+          </div>
+         </div>
+
+         <div class="row">           
+          <div class=" form-group input-group mb-3 col-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Localidad</b></span>
+            </div>
+            <input type="text" class="form-control text-center" placeholder="Corrientes" aria-label="Cantidad" aria-describedby="basic-addon3">
+          </div>
+          <div class="form-group input-group mb-3 col-6 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Código Postal</b></span>
+            </div>
+            <input type="text" class="form-control text-center" placeholder="3400" aria-describedby="basic-addon3">
+          </div>
+         </div>
+      </div>       
+          
+    
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal"><i class=" fa fa-times-circle"></i> Cancelar</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#INFOProb"><i class="fa fa-save"></i> Guardar</button>
+        </div>
+       </div>
+      </div>
+    </div>
+  <div class="modal fade" id="INFOProb" tabindex="-1" role="dialog" aria-labelledby="ML8" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title text-center" id="ML8"><i class="fa fa-exclamation-triangle text-gray"></i> Confirmación</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3>¿Esta seguro de realizar dicha acción?</h3>
+        </div>
+        <div class="modal-footer">
+          <div class="row">
+            <div class="col-6">
+              <button type="button" class="btn btn-lg btn-outline-success"data-dismiss="modal" data-toggle="modal" data-target="#sipe" > SI </button> 
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-lg btn-outline-danger" data-dismiss="modal">NO</button> 
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="sipe" tabindex="-1" role="dialog" aria-labelledby="ML8" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="ML8">Nuevo Cliente generado <i class="fas fa-user-check"></i></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body ">
+          <div class="alert alert-success" role="alert">
+            <h3>ID: HD95FV8R</h3>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="row">
+            <div class="col-6">
+              <button type="button" class="btn btn-lg btn-outline-success"data-dismiss="modal" data-toggle="modal" data-target="#newcli-modal">Aceptar</button>
+            </div>
+          </div>         
+        </div> 
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--MODIFICAR CLIENTE-->
+<section>
+  <div class="modal fade" id="modcli-modal" tabindex="-1" role="dialog"  aria-labelledby="ML2" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="font-size: 30px">Modificar Cliente <i class="fas fa-user-edit"></i></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+         <div class="modal-footer">
+            <div class="container modal-body ">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <button type="button" class="btn btn-outline-secondary text-dark" data-toggle="modal" data-target="#modcli2-modal" data-dismiss="modal" title="Maximo 20 caracteres"> Buscar <i class="fas fa-search text-success"></i> </button>
+                </div>
+                <input style="border-color:unset; " type="text" class="form-control col-md-6 text-center" placeholder="Ingrese ID o nombre cliente">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modcli2-modal"tabindex="-1"role="dialog" aria-labelledby="ML2" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="font-size: 30px" id="ML1">Datos del Cliente <i class="fas fa-user-edit"></i></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="input-group mb-3 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1" > <b>Nombre Cliente</b> </span>
+            </div>
+            <input class="form-control text-center col-md-4" type="text" value="Sanchez, Luis">
+          </div>
+          <div class="row">
+            <div class="form-group input-group mb-3 col-5">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3"><b>DNI</b></span>
+              </div>
+              <input type="text" class="form-control text-center" value="37123456" aria-describedby="basic-addon3">
+            </div>
+            <div class="form-group input-group mb-3 col-6">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3"> <b>CUIT/CUIT</b></span>
+              </div>
+              <input type="text" class="form-control text-center" value="27371234569" aria-describedby="basic-addon3">
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon2"><b>Domicilio</b> </span>
+            </div>
+            <input type="text" class="form-control text-center col-md-8" value="Bo. Dr Montaña 999viv. Mz.60 Cs.7"  aria-describedby="basic-addon2">
+          </div> 
+        <div class="row">        
+          <div class=" form-group input-group mb-3 col-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Celular</b></span>
+            </div>
+            <input type="text" class="form-control text-center" value="03794-987654"aria-describedby="basic-addon3">
+          </div>
+          <div class=" form-group input-group mb-3 col-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Telefono fijo</b></span>
+            </div>
+            <input type="text" class="form-control text-center" value="4-482640" aria-describedby="basic-addon3">
+          </div>
+        </div>  
+          <div class="input-group mb-3 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>E-mail</b></span>
+            </div>
+            <input type="text" class="form-control text-center col-md-6" value="sanchezluis@gmail.com" aria-describedby="basic-addon3">
+          </div>       
+
+        <div class="row">           
+          <div class=" form-group input-group mb-3 col-5">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"> <b>País</b></span>
+            </div>
+            <input type="text" class="form-control text-center" value="Argentina" aria-label="Cantidad" aria-describedby="basic-addon3">
+          </div>
+          <div class="form-group input-group mb-3 col-6 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Provincia</b></span>
+            </div>
+            <input type="text" class="form-control text-center" value="Corrientes" aria-describedby="basic-addon3">
+          </div>
+        </div>
+
+         <div class="row">           
+          <div class=" form-group input-group mb-3 col-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Localidad</b></span>
+            </div>
+            <input type="text" class="form-control text-center" value="Corrientes" aria-label="Cantidad" aria-describedby="basic-addon3">
+          </div>
+          <div class="form-group input-group mb-3 col-6 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Código Postal</b></span>
+            </div>
+            <input type="text" class="form-control text-center col-md-4" value="3400" aria-describedby="basic-addon3">
+          </div>
+         </div>
+       <div>
+        
+       </div>
+      </div>     
+          
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times-circle"></i> Cancelar</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#INFOmod"><i class="fa fa-save"></i> Guardar</button>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="INFOmod" tabindex="-1" role="dialog" aria-labelledby="ML8" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content alert alert-info">
+        <div class="modal-header">
+          <h3 class="modal-title text-center text-dark" id="ML8">Cliente Modificado <i class="fas fa-user-check"></i></h3>
+        </div>
+        <div class="modal-body alert-success">
+          <h5>Los datos del cliente se han modificado satisfactoriamente.</h5>
+        </div>
+        <div class="modal-footer">
+          <div class="row">
+            <div class="col-6">
+              <button type="button"class="btn-lg btn-success" data-dismiss="modal" data-target="#modcli-modal" data-toggle="modal">Aceptar</button> 
+            </div>
+          </div>         
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--NUEVO PROVEEDOR-->
+<section>
+  <div class="modal fade" id="newprov-modal" tabindex="-1" role="dialog" aria-labelledby="ML2" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="font-size: 30px" id="ML1">Nuevo Proveedor <i class="fas fa-user-plus"></i></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="input-group mb-3 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1" title="Indique nombre del proveedor"> <b>Nombre</b>  </span>
+            </div>
+            <input class="form-control text-center col-md-4" type="text" placeholder="Sanchez, Luis">
+          </div>
+          <div class="row">
+            <div class="input-group mb-3 col-6">
+              <div class="input-group-prepend">
+               <span class="input-group-text" id="basic-addon3"  title=" En este campo podra indicar si dicho cliente es particular o proveedor"><b>Categoria</b></span>
+              </div>          
+              <select class="custom-select text-center" id="validationCustom04">
+                <option class="text-center" selected disabled value="">Elegir</option>
+                <option class="text-center" value="1">Particular</option>
+                <option class="text-center" value="2">Proveedor</option>
+              </select>                       
+            </div>
+            <div class="input-group mb-3 col-6">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3"><b>CUIT</b></span>
+              </div>
+              <input type="text" class="form-control text-center" placeholder="30-11111111-9">
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon2"><b>Domicilio</b> </span>
+            </div>
+            <input type="text" class="form-control text-center col-md-8" placeholder="Bo. Dr Montaña 999viv. Mz.60 Cs.7" aria-label="" aria-describedby="basic-addon2">
+          </div> 
+        <div class="row">        
+          <div class=" form-group input-group mb-3 col-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Celular</b></span>
+            </div>
+            <input type="text" class="form-control text-center" placeholder="03794-888888" aria-label="Cantidad" aria-describedby="basic-addon3">
+          </div>
+          <div class=" form-group input-group mb-3 col-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Telefono fijo</b></span>
+            </div>
+            <input type="text" class="form-control text-center" placeholder="4-888888" aria-describedby="basic-addon3">
+          </div>
+        </div>  
+          <div class="input-group mb-3 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4" title="Indique alguna dirección de correo electrónico(yahoo.com.ar/@gmail.com/@hotmail.com)"><b>E-mail</b></span>
+            </div>
+            <input type="text" class="form-control text-center col-md-5" placeholder="sanchezluis@gmail.com" aria-describedby="basic-addon3">
+          </div>
+         
+
+         <div class="row">           
+          <div class=" form-group input-group mb-3 col-5">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>País</b></span>
+            </div>
+            <input type="text" class="form-control text-center" placeholder="Argentina" aria-label="Cantidad" aria-describedby="basic-addon3">
+          </div>
+          <div class="form-group input-group mb-3 col-6 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Provincia</b></span>
+            </div>
+            <input type="text" class="form-control text-center" placeholder="Corrientes" aria-describedby="basic-addon3">
+          </div>
+         </div>
+
+         <div class="row">           
+          <div class=" form-group input-group mb-3 col-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Localidad</b></span>
+            </div>
+            <input type="text" class="form-control text-center" placeholder="Corrientes" aria-describedby="basic-addon3">
+          </div>
+          <div class="form-group input-group mb-3 col-6 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Código Postal</b></span>
+            </div>
+            <input type="text" class="form-control text-center col-md-4" placeholder="3400" aria-describedby="basic-addon3">
+          </div>
+         </div>
+       </div>            
+          
+    
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times-circle"></i> Cancelar</button>
+          <button type="button" class="btn btn-success"data-dismiss="modal" data-toggle="modal" data-target="#ok"><i class="fa fa-save"></i> Guardar</button>
+        </div>
+       </div>
+      </div>
+    </div>
+  
+  <div class="modal fade" id="ok" tabindex="-1" role="dialog" aria-labelledby="ML8" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="ML8"><i class="fas fa-exclamation-triangle"></i> Confirmación</h5>
+        </div>
+        <div class="modal-body">
+          <h3>¿Esta seguro de realizar dicha acción?</h3>
+        </div>
+        <div class="modal-footer">
+          <div class="row">
+            <div class="col-6">
+              <button type="button" class="btn btn-lg btn-outline-success" data-dismiss="modal"data-toggle="modal" data-target="#dale" > SI </button> 
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-lg btn-outline-danger" data-dismiss="modal">NO</button> 
+            </div>
+          </div>         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="dale" tabindex="-1" role="dialog" aria-labelledby="ML8" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title text-center" id="ML8" style="font-size:30px;">Nuevo Proveedor generado <i class="fas fa-user-check"></i></h4>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-success" role="alert">
+            <h3>ID: HD95FV8R</h3>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="row">
+            <div class="col-6">
+              <button type="button" class="btn btn-lg btn-outline-success"data-dismiss="modal" data-toggle="modal" data-target="#newprov-modal">Aceptar</button> 
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--MODIFICAR PROVEEDOR-->
+<section>
+  <div class="modal fade" id="modprov-modal" tabindex="-1" role="dialog"  aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="font-size: 30px">Modificar Proveedor  <i class="fas fa-user-edit"></i></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+         <div class="modal-footer">
+            <div class="container modal-body ">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <button type="button" class="btn btn-outline-secondary text-dark" data-toggle="modal" data-target="#modprov2-modal" data-dismiss="modal" title="Maximo 20 caracteres"> Buscar <i class="fas fa-search text-success"></i> </button>
+                </div>
+                <input style="border-color:unset; " type="text" class="form-control col-md-6 text-center" placeholder="Ingrese ID o nombre proveedor">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modprov2-modal" tabindex="-1" role="dialog" aria-labelledby="ML2" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="font-size: 30px" id="ML1">Datos del Proveedor <i class="fas fa-user-edit"></i></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="input-group mb-3 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1" title="Indique nombre del proveedor"><b>Nombre</b></span>
+            </div>
+            <input class="form-control text-center col-md-4" type="text" value="Sanchez, Luis">
+          </div>
+          <div class="row">
+            <div class="input-group mb-3 col-6">
+              <div class="input-group-prepend">
+               <span class="input-group-text" id="basic-addon3"  title=" En este campo podra indicar si dicho cliente es particular o proveedor"> <b>Categoria</b>  </span>
+              </div>          
+              <select class="custom-select text-center" id="validationCustom04">
+                <option class="text-center" value="1">Particular</option>
+                <option class="text-center" value="2">Proveedor</option>
+              </select>                       
+            </div>
+            <div class="input-group mb-3 col-6">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3"><b>CUIT</b></span>
+              </div>
+              <input type="text" class="form-control text-center" value="30-03034567-9">
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon2"><b>Domicilio</b> </span>
+            </div>
+            <input type="text" class="form-control text-center col-md-7" value="Bo. Dr Montaña 999viv. Mz.60 Cs.7" aria-label="" aria-describedby="basic-addon2">
+          </div> 
+        <div class="row">        
+          <div class=" form-group input-group mb-3 col-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Celular</b></span>
+            </div>
+            <input type="text" class="form-control text-center" value="03794-030345" aria-label="Cantidad" aria-describedby="basic-addon3">
+          </div>
+          <div class=" form-group input-group mb-3 col-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Telefono fijo</b></span>
+            </div>
+            <input type="text" class="form-control text-center" value="4-482610" >
+          </div>
+        </div>  
+          <div class="input-group mb-3 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>E-mail</b></span>
+            </div>
+            <input type="text" class="form-control text-center col-md-6" value="sanchezluis@gmail.com" >
+          </div>
+         <div class="row">           
+          <div class=" form-group input-group mb-3 col-5">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>País</b></span>
+            </div>
+            <input type="text" class="form-control text-center" value="Argentina">
+          </div>
+          <div class="form-group input-group mb-3 col-6 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Provincia</b></span>
+            </div>
+            <input type="text" class="form-control text-center col-md-6" value="Corrientes">
+          </div>
+         </div>
+         <div class="row">           
+          <div class=" form-group input-group mb-3 col-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Localidad</b></span>
+            </div>
+            <input type="text" class="form-control text-center" value="Corrientes" aria-describedby="basic-addon3">
+          </div>
+          <div class="form-group input-group mb-3 col-6 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Código Postal</b></span>
+            </div>
+            <input type="text" class="form-control text-center col-md-4" value="3400" aria-describedby="basic-addon3">
+          </div>
+         </div>
+       </div>
+    
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times-circle"></i> Cancelar</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal"data-toggle="modal" data-target="#INFOpe"><i class="fa fa-save"></i> Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="INFOpe" tabindex="-1" role="dialog" aria-labelledby="ML8" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content alert alert-info">
+        <div class="modal-header">
+          <h4 class="modal-title text-center" id="ML8" style="font-size: 30px;">Proveedor Modificado <i class="fas fa-user-check"></i></h4>
+        </div>
+        <div class="modal-body alert-success">
+          <h4>
+            Sus cambios han sido guardados satisfactoriamente
+          </h4>
+        </div>
+        <div class="modal-footer">
+          <div class="row">
+            <div class="col-6">
+              <button type="button" class="btn-lg btn-success" data-dismiss="modal" data-toggle="modal" data-target="#modprov-modal"  data-backdrop="static"> Aceptar </button> 
+            </div>
+          </div>         
+        </div>
+      </div>
+    </div>
+  </div>    
+</section>
+
+<!--MODIFICAR PEDIDO-->
+<section>
+  <div class="modal fade" id="modped-modal" tabindex="-1" role="dialog"  aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog " role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="font-size: 30px">Modificar pedido  <i class="fas fa-tools"></i></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+         <div class="modal-footer">
+            <div class="container modal-body ">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <button type="button" class="btn btn-outline-secondary text-dark" data-toggle="modal" data-dismiss="modal" data-target="#modped2-modal" title="Maximo 20 caracteres"> Buscar <i class="fas fa-search text-success"></i> </button>
+                </div>
+                <input style="border-color:unset; " type="text" class="form-control col-md-6 text-center " placeholder="Ingrese el ID de pedido">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modped2-modal" tabindex="-1" role="dialog" aria-labelledby="ML2"aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="font-size: 30px" id="ML1">Datos del Pedido <i class="fas fa-edit"></i></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="input-group mb-3 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><b>Nombre producto</b> </span>
+            </div>
+            <input class="form-control text-center col-md-4" type="text" value="Botella 2L">
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon3"><b>Descripcion</b></span>
+            </div>
+            <input type="text" class="form-control text-center" value="boca angosta de PP autoclavable, color celeste">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon2"><b>Nombre cliente</b> </span>
+            </div>
+            <input type="text" class="form-control text-center col-md-4" value="Sanchez Luis" >
+          </div> 
+          <div class="row">           
+            <div class=" form-group input-group mb-3 col-5">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon4"><b>Cantidad</b></span>
+              </div>
+              <input type="text" class="form-control text-center col-md-4" value="580" >
+            </div>
+            <div class="form-group input-group mb-3 col-7 ">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon4"><b>Fecha entrega</b></span>
+              </div>
+              <input type="text" class="form-control text-center col-md-5" value="03/06/2020" >
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times-circle"></i> Cancelar</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal"data-toggle="modal" data-target="#INFOmodif-modal"><i class="fa fa-save"></i> Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="INFOmodif-modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content alert alert-info">
+        <div class="modal-header">
+          <h5 class="modal-title">Pedido Modificado <i class="fas fa-check-double" style="font-size: 30px;"></i></h5>
+        </div>
+        <div class="modal-body alert-success">
+          <h4>Sus cambios han sido guardados satisfactoriamente.</h4>
+        </div>
+        <div class="modal-footer">
+          <div class="row">
+            <div class="col-6">
+              <button type="button" class="btn-lg btn-success text-light" data-dismiss="modal" data-toggle="modal" data-target="#modped-modal" > Aceptar </button> 
+            </div>
+          </div>         
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--REGISTRAR PEDIDO-->
+<section>
+  <div class="modal fade" id="regped-modal" tabindex="-1" role="dialog" aria-labelledby="ML2" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="font-size: 30px" id="ML1">Registrar pedido <i class="fas fa-list-alt"></i></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="input-group mb-3 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"><b>Nombre producto</b> </span>
+            </div>
+            <input class="form-control text-center col-md-5" type="text" placeholder="Botella 2L">
+          </div>
+
+           <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon3"><b>Descripcion</b></span>
+            </div>
+            <input type="text" class="form-control text-center" placeholder="Ej. ancho, alto, color" aria-describedby="basic-addon3">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon2"><b>Nombre cliente</b> </span>
+            </div>
+            <input type="text" class="form-control text-center col-md-4" placeholder="Ej. pepito" aria-label="" aria-describedby="basic-addon2">
+          </div> 
+          <div class="row">           
+          <div class=" form-group input-group mb-3 col-5">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Cantidad</b></span>
+            </div>
+            <input type="text" class="form-control text-center col-md-4" placeholder="300" aria-label="Cantidad" aria-describedby="basic-addon3">
+          </div>
+          <div class="form-group input-group mb-3 col-7 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon4"><b>Fecha entrega</b></span>
+            </div>
+            <input type="text" class="form-control text-center" placeholder="03/06/2020" aria-describedby="basic-addon3">
+          </div>
+         </div>
+          </div>                
+           
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times-circle"></i> Cancelar</button>
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#INFOped" data-dismiss="modal"><i class="fa fa-save"></i> Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="INFOped" tabindex="-1" role="dialog" aria-labelledby="ML8" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title text-center" id="ML8" style="font-size: 30px;"><i class="fas fa-exclamation-triangle"></i> Confirmación</h4>
+        </div>
+        <div class="modal-body">
+          <h3>¿Esta seguro de realizar dicha acción?</h3>
+        </div>
+        <div class="modal-footer">
+          <div class="row">
+            <div class="col-6">
+              <button type="button" class="btn btn-lg btn-outline-success"data-dismiss="modal" data-toggle="modal" data-target="#gueno" > SI </button> 
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-lg btn-outline-danger" data-toggle="modal" data-dismiss="modal">NO</button> 
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="gueno" tabindex="-1" role="dialog" aria-labelledby="ML8" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title text-center" id="ML8" style="font-size: 30px;">Nuevo pedido generado <i class="fas fa-tasks"></i></h4>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-success" role="alert">
+            <h3>ID pedido: HD95FV8R</h3>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="row">
+            <div class="col-6">
+              <button type="button" class="btn btn-lg btn-outline-success" data-dismiss="modal" data-target="#regped-modal" data-toggle="modal">Aceptar</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--CONSULTAR VENTAS REALIZADAS-->
+<section>
+  <section>
+    <div class="modal fade" id="Vtas-modal" data-backdrop="static" tabindex="-1" role="dialog"aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="staticBackdropLabel" style="font-size: 30px"><i class="fas fa-list-alt"></i> Reporte de Ventas Realizadas</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="submit" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#listadomodal4" title="Maximo 20 caracteres"> <i class="fas fa-search"></i> Buscar </button>
+              </div>
+              <input type="text" aria-label="Id_Producto" title="Ingrese fecha de Venta o Nombre del cliente" class="form-control col-md-2 text-center" placeholder="Jorge Avelar">
+            </div>
+            <hr>
+          <table class="container table table-bordered border-success table-hover table-white">
+            <thead class=" text-center text-black">
+              <tr class="table-success">
+                <th scope="col"><i class="fas fa-calendar-check"></i> Fecha de Venta</th>
+                <th scope="col"><i class="fas fa-address-book"></i> Nombre cliente</th>
+                <th scope="col"><i class="fas fa-dice-d6"></i> Productos Vendidos</th>
+                <th scope="col"><i class="fas fa-weight-hanging"></i> Cantidad Vendida x Unidad</th>
+                <th scope="col"><i class="fas fa-comment-dollar"></i> Precio x Unidad</th>
+                <th scope="col"><i class="fas fa-dolly-flatbed"></i> Total General x Unidad</th>
+                <th scope="col"><i class="fas fa-dolly-flatbed"></i> Importe Pagado</th>
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr class="text-center">
+                <td>06/05/20</td>
+                <td>Sebastian Rodas</td>
+                <td>
+                  PET: Flake Cristal(Molido) <br><hr>
+                  POLIPROPILENO(PP)<br><hr>
+                  POLIETILENO ALTA DENSIDAD (PEAD)
+                </td>
+                <td>
+                  100 <br><hr>
+                  10 <br><hr>
+                  30
+                </td>
+                <td>
+                  10$ <br><hr>
+                  20$ <br><hr>
+                  40$
+                </td>
+                <td>
+                  $1000 <br><hr>
+                  $200 <br><hr>
+                  $1200
+                </td>  
+                <td>
+                  $2400
+                </td>
+              </tr>
+              <tr>
+                <td>06/05/20</td>
+                <td>Hector Campi</td>
+                <td>
+                  PET: Flake Cristal(Molido) <br><hr>
+                  PVC (policloruro de vinilo)<br><hr>
+                  POLIETILENO ALTA DENSIDAD (PEAD)
+                </td>
+                <td>
+                  1000 <br><hr>
+                  150 <br><hr>
+                  300
+                </td>
+                <td>
+                  10$ <br><hr>
+                  50$ <br><hr>
+                  40$
+                </td>
+                <td>
+                  $1000 <br><hr>
+                  $7500 <br><hr>
+                  $1200
+                </td>  
+                <td>
+                  $9700
+                </td>
+              </tr>
+              <tr>
+                <td>06/05/20</td>
+                <td>Clarise Troncoso</td>
+                <td>
+                  PET: Flake Cristal(Molido) <br><hr>
+                  PVC (policloruro de vinilo)<br><hr>
+                  PEBD (polietileno de baja densidad)
+                </td>
+                <td>
+                  10 <br><hr>
+                  20 <br><hr>
+                  40
+                </td>
+                <td>
+                  10$ <br><hr>
+                  50$ <br><hr>
+                  60$
+                </td>
+                <td>
+                  $1000 <br><hr>
+                  $1000 <br><hr>
+                  $2400
+                </td>  
+                <td>
+                  $4400
+                </td>
+              </tr>
+              <tr>
+                <td>06/05/20</td>
+                <td>Tomas Barboza</td>
+                <td>
+                  PET: Flake Cristal(Molido) <br><hr>
+                  POLIPROPILENO(PP)<br><hr>
+                  PEBD (polietileno de baja densidad)
+                </td>
+                <td>
+                  100 <br><hr>
+                  10<br><hr>
+                  30
+                </td>
+                <td>
+                  10$ <br><hr>
+                  20$ <br><hr>
+                  40$
+                </td>
+                <td>
+                  $1000 <br><hr>
+                  $3000 <br><hr>
+                  $1000
+                </td>  
+                <td>
+                  $5000
+                </td>
+              </tr>
+              <tr>
+                <td>06/05/20</td>
+                <td>Ariel Acevedo</td>
+                <td>
+                  PET:Flake Cristal(Molido) <br><hr>
+                  POLIPROPILENO(PP)<br><hr>
+                  PEBD (polietileno de baja densidad)
+                </td>
+                <td>
+                  100 <br><hr>
+                  10<br><hr>
+                  30
+                </td>
+                <td>
+                  10$ <br><hr>
+                  20$ <br><hr>
+                  40$
+                </td>
+                <td>
+                  $1300 <br><hr>
+                  $2000 <br><hr>
+                  $1200
+                </td>  
+                <td>
+                  $4500
+                </td>
+              </tr>
+              <tr>
+                <td>06/05/20</td>
+                <td>Matias Garcia</td>
+                <td>
+                  PET: Flake Cristal(Molido) <br><hr>
+                  PVC (policloruro de vinilo)<br><hr>
+                  POLIETILENO ALTA DENSIDAD (PEAD)
+                </td>
+                <td>
+                  100kg <br><hr>
+                  10kg <br><hr>
+                  30kg
+                </td>
+                <td>
+                  10$ <br><hr>
+                  20$ <br><hr>
+                  40$
+                </td>
+                <td>
+                  $3000 <br><hr>
+                  $200 <br><hr>
+                  $1200
+                </td>  
+                <td>
+                  $4400
+                </td>
+              </tr>
+            </tbody>
+          </table>
+         </div>
+        <div class="modal-footer">
+          <div class="container text-right p-3 ">
+            <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-print"></i> Imprimir</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal"> <i class="fa fa-reply"></i> Volver</button>
+          </div> 
+      </div>
+    </div>
+   </div>
+  </section>
+ <div class="modal fade" id="listadomodal4" tabindex="-1" role="dialog" aria-labelledby="MST1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title text-center" id="MST1" style="font-size:30px"><i class="fas fa-info-circle"></i> Datos de la Venta</h4>
+          </div>     
+          <div class="modal-body">
+            <table class="container table table-bordered border-success table-hover table-white">
+              <thead class=" text-center text-black">
+                <tr class="table-success">
+                  <th scope="col"><i class="fas fa-calendar-check"></i> Fecha de Venta</th>
+                  <th scope="col"><i class="fas fa-address-book"></i> Nombre cliente</th>
+                  <th scope="col"><i class="fas fa-dice-d6"></i> Productos Vendidos</th>
+                  <th scope="col"><i class="fas fa-weight-hanging"></i> Cantidad Vendida x Unidad</th>
+                  <th scope="col"><i class="fas fa-comment-dollar"></i> Precio x Unidad</th>
+                  <th scope="col"><i class="fas fa-dolly-flatbed"></i> Total General x Unidad</th>
+                  <th scope="col"><i class="fas fa-dolly-flatbed"></i> Importe Pagado</th>
+                </tr>
+              </thead>
+              <tbody class="text-center">
+                <tr>
+                  <td>06/05/20</td>
+                <td>Sebastian Rodas</td>
+                <td>
+                  PET: Flake Cristal(Molido) <br><hr>
+                  POLIPROPILENO(PP)<br><hr>
+                  POLIETILENO ALTA DENSIDAD (PEAD)
+                </td>
+                <td>
+                  100 <br><hr>
+                  10 <br><hr>
+                  30
+                </td>
+                <td>
+                  10$ <br><hr>
+                  20$ <br><hr>
+                  40$
+                </td>
+                <td>
+                  $1000 <br><hr>
+                  $200 <br><hr>
+                  $1200
+                </td>  
+                <td>
+                  $2400
+                </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Vtas-modal" data-dismiss="modal"><i class="fa fa-reply"></i> Volver</button>
+          </div>    
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<script src="C:\Users\matu_\Desktop\TPI\base\js\validaciones.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

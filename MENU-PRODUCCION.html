@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+  <title>MENU</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+}
+body,html{
+  height: 100%;
+  background-repeat: no-repeat; 
+  background-color:#F6F8F3; 
+}
+  .wrapper {
+  min-height: 100%;
+  position: relative;
+}
+.footer {
+  height:50px;
+  position: fixed;
+}
+.example .pagination>li>a,
+.example .pagination>li>span {
+  border: 1px solid  #28A744;
+}
+.pagination>li>a {
+  color: #28A744;
+}
+.pagination>li.active>a {
+  background: #28A744;
+  color: #fff;
+}
+.opciones{
+  width: 250px;
+  height: 100px;
+  background: #28A744;
+  color: #fff;
+  font-size: 1.2em;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+.opciones2{
+  width: 430px;
+  height:50px ;
+  background: #28A744;
+  color: #fff;
+  font-size: 1.2em;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+.opciones:hover, .opciones2:hover{
+  animation-name: AnimHover;
+  cursor: pointer;
+  color: #fff
+}
+@keyframes AnimHover{
+            0%{
+                transform: scale3d(1,1,1);
+            }
+            25%{
+                box-shadow: 0px 0px 5px #000;
+            }
+            50%{
+                transform: scale3d(1.1,1.1,1.1);
+                background-color: #2D5D66;
+                box-shadow: 0px 0px 5px #000;
+            }
+            75%{
+                box-shadow: 0px 0px 5px #000;
+            }         
+        }
+</style>
+</head>
+<body>
+<!--SECCION SISTEMA DE GESTION RECIPLAS-->
+<section>
+  <div class="py-3 mb-2 bg-light text-dark">
+  <header>
+    <div class="container-fluid">      
+      <div class="border-secondary text-success p-3 bg-secondary text-black shadow bg-white rounded">
+        <div class="row">
+          <div class="col-10 pt-2">
+            <h1>
+              <img src="https://i.ibb.co/1qvWxM9/LOGORECIPLAS.png" alt="LOGORECIPLAS" border="0" class="text bg-gradient-secondary">Sistema de Gestion Reciplas        
+            </h1>
+          </div>
+          <div class="col-2 text-right pt-2">  
+            <a href="PAGINA PRINCIPAL.html" class="btn btn-success btn-lg">
+              Salir <i class="fas fa-sign-out-alt"></i>
+            </a>        
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  </div>
+</section>
+
+ <!--SECCION BREADCRUMB-->
+ <section>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active"><a class="text-success" href="PAGINA PRINCIPAL.html">Pagina principal</a> </li>
+      <li class="breadcrumb-item active" aria-current="page"> Menú Produccion</li>
+    
+    </ol>
+  </nav>
+</section>
+
+<!--SECCION NOMBRE DE USUARIO-->
+<section class="usuario">
+  <h3 class="px-3">
+      <p class="text-secondary"><img src="http://www.rrhhdigital.com/userfiles/empleados-felices-womenalia.jpg" width="80" height="80" class="img-thumbnail"> Bienvenido Jose Perez</p>
+  </h3>
+  <hr>
+</section>
+
+<!--SECCION MENU-->
+  <section class=" p-5 wrapper"> 
+      <div class="container py">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-3 col-lg-3 mx-lg-0" >
+            <button type="button" class="btn btn-lg opciones text-wrap py-3" data-toggle="modal" data-target="#MSPFmodal">
+              Modificar Stock de Productos Fabricados
+            </button>
+          </div>
+          <div class="col-12 col-md-6 mb-3 col-lg-3 mx-lg-0">
+            <button type="button" class="btn btn-lg opciones text-wrap py-3" data-toggle="modal" data-target="#MSMPmodal">
+              Modificar Stock de Materia Prima
+            </button>
+          </div>
+          <div class="col-12 col-md-6 mb-3 col-lg-3 mx-lg-auto">
+            <button type="button" class="btn btn-lg opciones text-wrap py-3" data-toggle="modal" data-target="#CPCmodal">
+              Consultar pedido de cliente
+            </button>
+          </div>
+          <div class="col-12 col-md-6 mb-3 col-lg-3 mx-lg-0">
+            <button type="button" class="btn btn-lg opciones text-wrap py-3" data-toggle="modal" data-target="#RSmodal">
+              Consultar/Emitir Reportes de Stock
+            </button>
+          </div>
+        </div>
+      </div>
+</section>    
+
+<!--SECCION FOOTER-->
+<section>
+  <footer class="footer fixed-bottom font-small text-center bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="m-0 py-3">Copyright @ 2020. Todos los derechos reservados. Desing Patterns</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
+
+<!--SECCION Modificar Stock de Productos Fabricados-->
+<section>
+    <div class="modal fade" id="MSPFmodal" tabindex="-1" role="dialog" aria-labelledby="ML2"  aria-hidden="true" data-backdrop="static">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" style="font-size: 25px" id="ML1"><i class="fas fa-edit"></i> Modificar Stock de Productos Fabricados</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+    
+              <div class="modal-body">
+                <div class="input-group ">
+                  <button type="button"  data-placement="top" class="btn btn-secondary col-md-4" data-toggle="modal" data-target="#BSPFmodal" data-dismiss="modal" ><i class="fas fa-search"></i>  Buscar</button>
+                  <input type="text" aria-label="Id_Producto" class="form-control text-center col-md-5" placeholder="Botella 5LT" title="Ingrese ID o Nombre del producto">
+                  <div class="input-group-prepend">
+                    
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    
+    <div class="modal fade" id="BSPFmodal" tabindex="-1" role="dialog" aria-labelledby="ML2" aria-hidden="true" data-backdrop="static">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" style="font-size: 30px" id="ML1"><i class="fas fa-info-circle"></i> Datos de Stock de Productos Fabricados</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+    
+    <div class="modal-body">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="Id_MateriaPrima"><b>ID Producto</b> </span>
+        </div>
+        <input class="form-control text-center" type="text" placeholder="254683" readonly>
+      </div>
+    
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon2"><b>Nombre del Producto</b> </span>
+        </div>
+        <input class="form-control text-center type="text" placeholder="Botella de Plastico" readonly>
+      </div>
+    
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon2"><b>Descripción</b> </span>
+        </div>
+        <input class="form-control text-center type="text" placeholder="Tamaño 500 ml" readonly>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group input-group mb-3 col-8">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon3"><b>Fecha de Alta</b></span>
+          </div>
+          <input type="text" class="form-control text-center" placeholder="DD/MM/AAAA" aria-label="FechaAlta" aria-describedby="basic-addon3" required />
+        </div>
+        <div class="offset-4"></div>
+      </div>
+      <div class="row">
+      <div class="form-group input-group mb-3 col-5">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3"> <b>Cantidad</b></span>
+        </div>
+        <input type="text" class="form-control text-center" placeholder="300" aria-label="Cantidad" aria-describedby="basic-addon3">
+      </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times-circle"></i> Cancelar</button>
+      <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#INFOProb"><i class="fas fa-save"></i> Guardar</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="modal fade" id="INFOProb" tabindex="-1" role="dialog" aria-labelledby="ML8" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title text-center" id="ML8" style="font-size: 30px;">Confirmación</h4>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <h3>¿Esta seguro de realizar dicha acción?</h3>
+    </div>
+    <div class="modal-footer">
+      <div class="row">
+        <div class="col-6">
+          <button type="submit" class="btn btn-lg btn-outline-success" data-dismiss="modal" data-toggle="modal" data-target="#SI1"> SI </button> 
+            </div>
+        <div class="col-6">
+          <button type="button" class="btn btn-lg btn-outline-danger" data-dismiss="modal">NO</button> 
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="SI1" tabindex="-1" role="dialog" aria-labelledby="ML8" aria-hidden="true" data-backdrop="static">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title text-center alert-success" id="ML8">Se ha modificado correctamente el stock de Productos Fabricados</h4>
+          </div>
+          <div class="modal-footer ">
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-dismiss="modal" data-target="#MSPFmodal"><i class="fas fa-times-circle"></i> Volver</button>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!--SECCION Modificar Stock de MATERIA PRIMA-->
+<section>
+<div class="modal fade" id="MSMPmodal" tabindex="-1" role="dialog" aria-labelledby="ML8" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" style="font-size: 25px" id="ML1"><i class="fas fa-edit"></i> Modificar Stock de Materia Prima</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <button type="button"  data-placement="top" class="btn btn-secondary col-md-4" data-toggle="modal" data-target="#BSPFmodal" data-dismiss="modal" ><i class="fas fa-search"></i>  Buscar</button>
+                  <input type="text" aria-label="Id_Producto" class="form-control text-center col-md-5" placeholder="PET (tereftalato de polietileno)" title="Ingrese ID o Nombre del MP">
+              <div class="input-group-prepend">
+              
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="BMPmodal" tabindex="-1" role="dialog" aria-labelledby="ML8" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title text-centerstyle="font-size: 30px" id="ML1"><i class="fas fa-info-circle"></i> Datos de Stock de Materia Prima</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+<div class="modal-body">
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="Id_MateriaPrima"><b>ID Materia Prima</b> </span>
+    </div>
+    <input class="form-control text-center" type="text" placeholder="25468" readonly>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon2"><b>Nombre de la Materia Prima</b> </span>
+    </div>
+    <input class="form-control text-center" type="text" placeholder="Plastico" readonly>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon2"><b>Descripción</b> </span>
+    </div>
+    <input class="form-control text-center" type="text" placeholder="PET (tereftalato de polietileno)" readonly>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon2"> <b>Proveedor</b> </span>
+    </div>
+    <input class="form-control text-center" type="text" placeholder="Los Plastificados" readonly>
+   
+  </div>
+  <div class="form-row">
+    <div class="form-group input-group mb-3 col-8">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon3"> <b>Fecha Ingreso</b></span>
+      </div>
+      <input class="form-control text-center" type="text" placeholder="30/12/2019" readonly>
+    </div>
+    <div class="offset-4"></div>
+  </div>
+  <div class="row">
+  <div class="form-group input-group mb-3 col-5">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon3"> <b>Cantidad</b></span>
+    </div>
+    <input type="text" class="form-control text-center" placeholder="300" aria-label="Cantidad" aria-describedby="basic-addon3">
+  </div>
+  <div class="offset-2"></div>
+  <div class="form-group input-group mb-3 col-4">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon3"><b>Peso</b></span>
+    </div>
+    <input type="text" class="form-control text-center" placeholder="300" aria-label="Peso" aria-describedby="basic-addon3">
+  </div>
+</div>
+<div class="row">
+<div class="form-group input-group-prepend col-3">
+  <span class="input-group-text" id="basic-addon3"><b>Calidad</b></span>
+</div>
+<div class="form-group form-check form-check-inline col-2">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1"><b>Buena</b></label>
+</div>
+<div class="form-group form-check form-check-inline col-2">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2"><b>Regular</b></label>
+</div>
+<div class="form-group form-check form-check-inline col-2">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+  <label class="form-check-label" for="inlineRadio3"><b>Mala</b></label>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times-circle"></i> Cancelar</button>
+  <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#INFOProb2"><i class="fas fa-save"></i> Guardar</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="INFOProb2" tabindex="-1" role="dialog" aria-labelledby="ML8" aria-hidden="true" data-backdrop="static">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title text-center" id="ML8">Confirmación</h5>
+</div>
+<div class="modal-body">
+  <h3>¿Esta seguro de realizar dicha acción?</h3>
+</div>
+<div class="modal-footer">
+  <div class="row">
+    <div class="col-6">
+      <button type="submit" class="btn btn-lg btn-outline-success" data-dismiss="modal" data-toggle="modal" data-target="#SI2"> SI</button>
+    </div>
+    <div class="col-6">
+      <button type="button" class="btn btn-lg btn-outline-danger" data-dismiss="modal">NO</button> 
+    </div>
+  </div>
+ 
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="SI2" tabindex="-1" role="dialog" aria-labelledby="ML8" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+      </div>
+      <div class="modal-body">
+        <h4 class="modal-title text-center alert-success" id="ML8">Se ha modificado correctamente el STOCK de Materia Prima</h4>
+      </div>
+      <div class="modal-footer ">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times-circle"></i> Cerrar</button>
+        </div>
+       </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!--SECCION REPORTE Pedido de Cliente-->
+<section>
+<div class="modal fade" id="CPCmodal" tabindex="-1" role="dialog" aria-labelledby="MST1" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="MST1" style="font-size: 30px;"> <i class="far fa-list-alt"></i> Listado de Pedido de Cliente</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <button type=submit" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#listadomodal" title="Maximo 20 caracteres"> <i class="fas fa-search"></i> Buscar </button>
+        </div>
+        <input type="text" aria-label="Id_Producto" class="form-control col-md-3" placeholder="Ingrese ID Pedido o Nombre del Cliente">
+      </div>
+      <hr>
+          <table class="container table table-bordered border-success table-hover table-white">
+            <thead class=" text-center text-black">
+                  <tr  class="table-success">
+                      <th scope="col"><i class=" "></i></i> ID Pedido</th>
+                      <th scope="col"><i class="fas fa-calendar-check"></i> Fecha del Pedido</th>
+                      <th scope="col"><i class="fas fa-address-book"></i> Idcliente</th>
+                      <th scope="col"><i class="fas fa-address-card"></i> Nombre Cliente</th>
+                      <th scope="col"><i class="fas fa-barcode"></i></i> ID producto</th>
+                      <th scope="col"><i class="fas fa-barcode"></i></i> Nombre producto</th>
+                      <th scope="col"><i class="fas fa-weight-hanging"></i>Cantidad x Producto</th>
+                      <th scope="col"><i class="fas fa-info-circle"></i> Estado</th>
+                  </tr>
+            </thead>
+            <tbody class="text-center">
+                <tr class="text-center">
+                  <td>3232422</td>
+                  <td>06/05/2020</td>
+                  <td>23AS32K</td>
+                  <td>Sebastian Rodas</td>
+                  <td>12312332</td>
+                  <td>
+                    PET: Flake Cristal(Molido) <br><hr>
+                    POLIPROPILENO(PP)<br><hr>
+                    POLIETILENO ALTA DENSIDAD (PEAD)
+                  </td>
+                  <td>
+                    100 <br><hr>
+                    10 <br><hr>
+                    30
+                  </td>
+                  <td>
+                    EN PRODUCCION
+                  </td>  
+                </tr>
+                <tr>
+                  <td>3232422</td>
+                  <td>06/05/2020</td>
+                  <td>23AS32K</td>
+                  <td>Sebastian Rodas</td>
+                  <td>12312332</td>
+                  <td>
+                    PET: Flake Cristal(Molido) <br><hr>
+                    POLIPROPILENO(PP)<br><hr>
+                    POLIETILENO ALTA DENSIDAD (PEAD)
+                  </td>
+                  <td>
+                    100 <br><hr>
+                    10 <br><hr>
+                    30
+                  </td>
+                  <td>
+                    EN PRODUCCION
+                  </td> 
+                </tr>
+                <tr>
+                  <td>3232422</td>
+                  <td>06/05/2020</td>
+                  <td>23AS32K</td>
+                  <td>Sebastian Rodas</td>
+                  <td>12312332</td>
+                  <td>
+                    PET: Flake Cristal(Molido) <br><hr>
+                    POLIPROPILENO(PP)<br><hr>
+                    POLIETILENO ALTA DENSIDAD (PEAD)
+                  </td>
+                  <td>
+                    100 <br><hr>
+                    10 <br><hr>
+                    30
+                  </td>
+                  <td>
+                    EN DEPOSITO (LISTO PARA ENTREGA)
+                  </td> 
+                </tr>
+                <tr>
+                  <td>3232422</td>
+                  <td>06/05/2020</td>
+                  <td>23AS32K</td>
+                  <td>Sebastian Rodas</td>
+                  <td>12312332</td>
+                  <td>
+                    PET: Flake Cristal(Molido) <br><hr>
+                    POLIPROPILENO(PP)<br><hr>
+                    POLIETILENO ALTA DENSIDAD (PEAD)
+                  </td>
+                  <td>
+                    100 <br><hr>
+                    10 <br><hr>
+                    30
+                  </td>
+                  <td>
+                    EN DEPOSITO (LISTO PARA ENTREGA)
+                  </td> 
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <div class="container text-right p-3 ">
+            <button type="button" class="btn btn-success mr-2 " data-dismiss="modal"><i class="fa fa-print"></i> Imprimir</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal"> <i class="fa fa-reply"></i> Volver</button>
+          </div>   
+        </div>
+  </div>
+  </div>
+  </div>
+  <div class="modal fade" id="listadomodal" tabindex="-1" role="dialog" aria-labelledby="MST1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-center" id="MST1" style="font-size:30px"><i class="fas fa-info-circle"></i> Datos del Pedido</h4>
+            </div>     
+            <div class="modal-body">
+              <table class="container table table-bordered border-success table-hover table-white">
+                <thead class=" text-center text-black">
+                      <tr  class="table-success">
+                          <th scope="col"><i class=" "></i></i> ID Pedido</th>
+                          <th scope="col"><i class="fas fa-calendar-check"></i> Fecha del Pedido</th>
+                          <th scope="col"><i class="fas fa-address-book"></i> Idcliente</th>
+                          <th scope="col"><i class="fas fa-address-card"></i> Nombre Cliente</th>
+                          <th scope="col"><i class="fas fa-barcode"></i></i> ID producto</th>
+                          <th scope="col"><i class="fas fa-barcode"></i></i> Nombre producto</th>
+                          <th scope="col"><i class="fas fa-weight-hanging"></i>Cantidad x Producto</th>
+                          <th scope="col"><i class="fas fa-info-circle"></i> Estado</th>
+                      </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr class="text-center">
+                      <td>3232422</td>
+                      <td>06/05/2020</td>
+                      <td>23AS32K</td>
+                      <td>Sebastian Rodas</td>
+                      <td>12312332</td>
+                      <td>
+                        PET: Flake Cristal(Molido) <br><hr>
+                        POLIPROPILENO(PP)<br><hr>
+                        POLIETILENO ALTA DENSIDAD (PEAD)
+                      </td>
+                      <td>
+                        100 <br><hr>
+                        10 <br><hr>
+                        30
+                      </td>
+                      <td>
+                        EN PRODUCCION
+                      </td>  
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#CPCmodal" data-dismiss="modal"> <i class="fa fa-reply"></i> Volver</button>
+            </div>    
+      </div>
+    </div>
+  </div>
+</section>
+        
+<!--REPORTES DE STOCKs (PF Y MP)-->
+<section>
+  <div class="modal fade" id="RSmodal" data-backdrop="static" tabindex="-1" role="dialog" " aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="staticBackdropLabel" style="font-size: 30px;"><i class="fas fa-clipboard-list"></i> Reportes de Stock</h4>
+        </div>
+      <div class="modal-body">
+    <div class="col-md-12 py-3" >
+          <button type="button" class="btn btn-lg opciones2 text-wrap" data-toggle="modal" data-dismiss="modal" data-target="#SPFmodal">
+            <i class="far fa-list-alt"></i> Stock de Productos Fabricados
+            </button>
+      </div>
+      <div class="col-md-12 pb-3" >
+          <button type="button" class="btn btn-lg opciones2 text-wrap" data-toggle="modal" data-dismiss="modal" data-target="#SMPmodal">
+            <i class="far fa-list-alt"></i> Stock de Materias Primas
+          </button>
+      </div>
+    </div>
+    <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times-circle"></i> Cerrar</button>
+    </div>
+    </div>
+    </div>
+  </div>
+  <!--REPORTES DE STOCK DE PRODUCTOS FABRICADOS-->
+  <section>
+    <div class="modal fade" id="SPFmodal" tabindex="-1" role="dialog" aria-labelledby="MST1" aria-hidden="true" data-backdrop="static">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="MST1" style="font-size: 30px;"><i class="far fa-list-alt"></i> Listado de stock de Productos Fabricados</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type=submit" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#listadomodal1" title="Maximo 20 caracteres"> <i class="fas fa-search"></i> Buscar </button>
+            </div>
+            <input type="text" aria-label="Id_Producto" class="form-control col-md-3" placeholder="Ingrese ID Producto o Fecha">
+          </div>
+          <hr>
+            <table class="container table table-bordered border-success table-hover table-white">
+              <thead class=" text-center text-black">
+                <tr class="table-success">
+                  <th scope="col"><i class="fas fa-calendar-check"></i> Fecha</th>
+                  <th scope="col"><i class="fas fa-barcode"></i></i>ID producto</th>
+                  <th scope="col"><i class="fas fa-file-signature"></i> Nombre producto</th>
+                  <th scope="col"><i class="fas fa-weight-hanging"></i> Cantidad Total</th>
+                  <th scope="col"><i class="fas fa-sort-amount-up"></i> Cantidad Minima de stock</th>
+                  <th scope="col"><i class="fas fa-info-circle"></i> Descripcion del Producto</th>
+                </tr>
+              </thead>
+              <tbody class="text-center">
+                <tr>
+                  <td>06/05/20</td>
+                  <td>15RGJ5E8</td>
+                  <td>Contenedor</td>
+                  <td>500</td>
+                  <td>50</td>  
+                  <td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#EjModal2" data-dismiss="modal" data-backdrop="static">Ver más <i class="far fa-plus-square"></i> (Este es el unico que funciona como ejemplo)</button></td>
+                </tr>
+                <tr>      
+                  <td>03/05/2020</td>
+                  <td>23ASE5F3</td>
+                  <td>Canasto</td>
+                  <td>955</td>
+                  <td>200</td>
+                  <td><button type="button" class="btn btn-light">Ver más <i class="far fa-plus-square"></i></button></td>
+                </tr>
+                <tr>
+                  <td>30/04/2020</td>
+                  <td>596ASD12</td>
+                  <td>Balde 10LT</td>
+                  <td>1200</td>
+                  <td>300</td>
+                  <td><button type="button" class="btn btn-light">Ver más <i class="far fa-plus-square"></i></button></td>
+                </tr>
+                <tr>      
+                  <td>02/05/2020</td>
+                  <td>596AF23F</td>
+                  <td>Balde 5LT</td>
+                  <td>1500</td>
+                  <td>400</td>
+                  <td><button type="button" class="btn btn-light">Ver más <i class="far fa-plus-square"></i></button></td>
+                </tr>
+                <tr>
+                  <td>04/05/2020</td>
+                  <td>888FA23A</td>
+                  <td>Bidon 50LT</td>
+                  <td>300</td>
+                  <td>100</td>  
+                  <td><button type="button" class="btn btn-light">Ver más <i class="far fa-plus-square"></i></button></td>
+                </tr>
+                <tr>
+                  <td>06/05/2020</td>
+                  <td>596AF23F</td>
+                  <td>Balde 2LT</td>
+                  <td>3500</td>
+                  <td>200</td>
+                  <td><button type="button" class="btn btn-light">Ver más <i class="far fa-plus-square"></i></button></td>
+                </tr>
+                <tr>
+                <td>06/05/2020</td>
+                <td>5223ASAF</td>
+                <td>Botella 5LT</td>
+                <td>6000</td>
+                <td>1000</td>
+                  <td><button type="button" class="btn btn-light text-left">Ver más <i class="far fa-plus-square"></i></button></td>
+                </tr>
+              <tr>
+                <td>06/05/2020</td>
+                <td>111A2AS</td>
+                <td>Basurero</td>
+                <td>8000</td>
+                <td>2000</td>
+                  <td><button type="button" class="btn btn-light text-left">Ver más <i class="far fa-plus-square"></i></button></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <div class="container text-right p-3 ">
+              <button type="button" class="btn btn-success " data-dismiss="modal"><i class="fa fa-print"></i> Imprimir</button>
+              <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#RSmodal"> <i class="fa fa-reply"></i> Volver</button>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+    <div class="modal fade" id="EjModal2" tabindex="-1" role="dialog" aria-labelledby="EML1" aria-hidden="true" data-backdrop="static" data-dismiss="modal">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="EML1" style="font-size: 30px;"><i class="fas fa-info-circle"></i> Descripcion</h4>
+          </div>
+          <div class="modal-body">
+            <table class="table table-bordered text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Nombre del Producto Fabricado <i class="fas fa-tag"></i></th>
+                  <th scope="col">Detalles <i class="fas fa-info-circle"></i></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Contenedor</th>
+                  <td>Medidas: 29x19x14cm (base, profundidad, altura)
+                    Acabado Simil Ratan, Manijas Resistentes, Hermoso Diseño! Combina con todo!
+                    Podes usarlo en el Mueble del Baño, En la Biblioteca, En el mueble de la PC, En el Dormitorio de los chicos, en el Armario, etc.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#SPFmodal" data-dismiss="modal"><i class="fa fa-reply"></i> Volver</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="EjModal3" tabindex="-1" role="dialog" aria-labelledby="EML1" aria-hidden="true" data-backdrop="static" data-dismiss="modal">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="EML1" style="font-size: 30px;"><i class="fas fa-info-circle"></i> Descripcion</h4>
+          </div>
+          <div class="modal-body">
+            <table class="table table-bordered text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Nombre del Producto Fabricado <i class="fas fa-tag"></i></th>
+                  <th scope="col">Detalles <i class="fas fa-info-circle"></i></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Contenedor</th>
+                  <td>Medidas: 29x19x14cm (base, profundidad, altura)
+                    Acabado Simil Ratan, Manijas Resistentes, Hermoso Diseño! Combina con todo!
+                    Podes usarlo en el Mueble del Baño, En la Biblioteca, En el mueble de la PC, En el Dormitorio de los chicos, en el Armario, etc.</td>
+                  
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#listadomodal1" data-dismiss="modal"><i class="fa fa-reply"></i> Volver</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="listadomodal1" tabindex="-1" role="dialog" aria-labelledby="MST1" aria-hidden="true" data-backdrop="static">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title text-center" id="MST1" style="font-size:30px">Datos del Producto</h4>
+              </div>     
+              <div class="modal-body">
+                <table class="container table table-bordered border-success table-hover table-white">
+                  <thead class=" text-center text-black">
+                    <tr class="table-success">
+                      <th scope="col"><i class="fas fa-calendar-check"></i> Fecha</th>
+                      <th scope="col"><i class="fas fa-barcode"></i></i>ID producto</th>
+                      <th scope="col"><i class="fas fa-file-signature"></i> Nombre producto</th>
+                      <th scope="col"><i class="fas fa-weight-hanging"></i> Cantidad Total</th>
+                      <th scope="col"><i class="fas fa-sort-amount-up"></i> Cantidad Minima de stock</th>
+                      <th scope="col"><i class="fas fa-info-circle"></i> Descripcion del Producto</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-center">
+                    <tr>
+                      <td>06/05/20</td>
+                  <td>15RGJ5E8</td>
+                  <td>Contenedor</td>
+                  <td>500</td>
+                  <td>50</td>  
+                  <td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#EjModal3" data-dismiss="modal" data-backdrop="static">Ver más <i class="far fa-plus-square"></i> (Este es el unico que funciona como ejemplo)</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#SPFmodal" data-dismiss="modal"> <i class="fa fa-reply"></i> Volver</button>
+              </div>    
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--REPORTES DE STOCK DE MATERIAS PRIMAS-->
+ <section>
+  <div class="modal fade" id="SMPmodal" tabindex="-1" role="dialog" aria-labelledby="MST1" aria-hidden="true" data-backdrop="static"  >
+    <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="MST1" style="font-size: 30px;"><i class="far fa-list-alt"></i> Listado de stock Materia Prima </h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+       <div class="modal-body">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type=submit" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#listadomodal-3" > <i class="fas fa-search"></i> Buscar </button>
+            </div>
+            <input type="text" aria-label="Id_Producto" class="form-control col-md-3" placeholder="RG9GS52C" title="Ingrese ID o Nombre de Materia Prima">
+          </div>
+          <hr>   
+          <table class="container table table-bordered border-success table-hover table-white">
+            <thead class=" text-center text-black">
+              <tr class="table-success">
+              <th scope="col"><i class="fas fa-barcode"></i> ID Materia Prima</th>
+              <th scope="col"><i class="fas fa-tag"></i> Nombre de Materia Prima</th>
+              <th scope="col"><i class="fas fa-warehouse"></i> Sector Deposito</th>
+              <th scope="col"><i class="fas fa-weight-hanging"></i> Cantidad Total</th>
+              <th scope="col"><i class="fas fa-sort-amount-up"></i> Cantidad Minima de Stock</th>
+              <th scope="col"><i class="fas fa-info-circle"></i> Descripcion</th>
+              </tr>
+            </thead>
+              <tbody class="text-center">
+              <tr>
+                <td>152311</td>
+                <td>PET(tereftalato de polietileno)</td>
+                <td>1</td>
+                <td>100000</td>
+                <td>2000</td>  
+                <td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#EjModal" data-backdrop="static" data-dismiss="modal">Ver más <i class="far fa-plus-square"></i> (Este es el unico que funciona como ejemplo)</button></td>
+              </tr>
+              <tr>      
+                <td>123123</td>
+                <td>PEAD(polietileno de alta densidad)</td>
+                <td>2</td>
+                <td>200000</td>
+                <td>1000</td> 
+                <td><button type="button" class="btn btn-light text-left">Ver más <i class="far fa-plus-square"></i></button></td>
+              </tr>
+              <tr>
+                <td>431188</td>
+                <td>PVC(policloruro de vinilo)</td>
+                <td>3</td>
+                <td>500000</td>
+                <td>10000</td>
+                <td><button type="button" class="btn btn-light text-left">Ver más <i class="far fa-plus-square"></i></button></td>
+              </tr>
+              <tr>      
+                <td>431188</td>
+                <td>PEBD (polietileno de baja densidad)</td>
+                <td>4</td>
+                <td>300000</td>
+                <td>5000</td>
+                <td><button type="button" class="btn btn-light text-left">Ver más <i class="far fa-plus-square"></i></button></td>
+              </tr>
+              <tr>
+                <td>255231</td>
+                <td>PP(polipropileno)</td>
+                <td>5</td>
+                <td>250000</td>
+                <td>2500</td> 
+                <td><button type="button" class="btn btn-light text-left">Ver más <i class="far fa-plus-square"></i></button></td>
+              </tr>
+              <tr>
+                <td>563234</td>
+                <td>PS (poliestireno)</td>
+                <td>6</td>
+                <td>500020</td>  
+                <td>2000</td>
+                <td><button type="button" class="btn btn-light text-left">Ver más <i class="far fa-plus-square"></i></button></td>
+              </tr>
+            </tbody>
+        </table>
+  </div>
+  <div class="modal-footer">
+    <div class="container text-right p-3 ">
+    <button type="button" class="btn btn-success " data-dismiss="modal"><i class="fa fa-print"></i> Imprimir</button>
+    <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#RSmodal"> <i class="fa fa-reply"></i> Volver</button>
+  </div>   
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  
+  <div class="modal fade" id="EjModal" tabindex="-1" role="dialog" aria-labelledby="EML1" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="EML1" style="font-size: 30px;">Descripcion <i class="fas fa-info-circle"></i></h4>
+        </div>
+        <div class="modal-body">
+          <table class="table table-bordered text-center">
+            <thead>
+              <tr>
+                <th scope="col">Nombre de Materia Prima <i class="fas fa-tag"></i></th>
+                <th scope="col">Detalles <i class="fas fa-info-circle"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">PET(tereftalato de polietileno)</th>
+                <td>Se trata de un plástico con alto nivel de transparencia; por esta razón es el preferido para almacenar refrescos y otras bebidas.
+                  Así mismo,impide la entrada de oxígeno, por lo que es capaz de mantener alimentos de forma óptima.
+                  Es totalmente reciclable y, además, resulta muy barato de fabricar. Los procesos de reciclaje a los que puede someterse son capaces de lograr generar un plástico igual o incluso de mejor calidad que el reciclado.
+                 </td>
+                
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#SMPmodal" data-dismiss="modal"><i class="fa fa-reply"></i> Volver</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="EjModalx" tabindex="-1" role="dialog" aria-labelledby="EML1" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="EML1" style="font-size: 30px;">Descripcion <i class="fas fa-info-circle"></i></h4>
+        </div>
+        <div class="modal-body">
+          <table class="table table-bordered text-center">
+            <thead>
+              <tr>
+                <th scope="col">Nombre de Materia Prima <i class="fas fa-tag"></i></th>
+                <th scope="col">Detalles <i class="fas fa-info-circle"></i></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">PET(tereftalato de polietileno)</th>
+                <td>Se trata de un plástico con alto nivel de transparencia; por esta razón es el preferido para almacenar refrescos y otras bebidas.
+                  Así mismo,impide la entrada de oxígeno, por lo que es capaz de mantener alimentos de forma óptima.
+                  Es totalmente reciclable y, además, resulta muy barato de fabricar. Los procesos de reciclaje a los que puede someterse son capaces de lograr generar un plástico igual o incluso de mejor calidad que el reciclado.
+                 </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#listadomodal-3" data-dismiss="modal"><i class="fa fa-reply"></i> Volver</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="listadomodal-3" tabindex="-1" role="dialog" aria-labelledby="MST1" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title text-center" id="MST1" style="font-size:30px">Datos de la Materia Prima <i class="fas fa-info-circle"></i></h4>
+            </div>     
+            <div class="modal-body">
+              <table class="container table table-bordered border-success table-hover table-white">
+                <thead class=" text-center text-black">
+                  <tr class="table-success">
+                    <th scope="col"><i class="fas fa-barcode"></i> ID Materia Prima</th>
+                    <th scope="col"><i class="fas fa-tag"></i> Nombre de Materia Prima</th>
+                    <th scope="col"><i class="fas fa-warehouse"></i> Sector Deposito</th>
+                    <th scope="col"><i class="fas fa-weight-hanging"></i> Cantidad Total</th>
+                    <th scope="col"><i class="fas fa-sort-amount-up"></i> Cantidad Minima de Stock</th>
+                    <th scope="col"><i class="fas fa-info-circle"></i> Descripcion</th>
+                  </tr>
+                </thead>
+                <tbody class="text-center">
+                  <tr>
+                    <td>152311</td>
+                    <td>PET(tereftalato de polietileno)</td>
+                    <td>1</td>
+                    <td>100000</td>
+                    <td>2000</td>  
+                    <td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#EjModalx" data-backdrop="static" data-dismiss="modal">Ver más <i class="far fa-plus-square"></i> (Este es el unico que funciona como ejemplo)</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#SMPmodal" data-dismiss="modal"> <i class="fa fa-reply"></i> Volver</button>
+            </div>    
+      </div>
+    </div>
+  </div>
+</section>
+
+</section>
+
+
+
+<script src="C:\Users\matu_\Desktop\TPI\base\js\validaciones.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
